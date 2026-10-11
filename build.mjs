@@ -174,13 +174,14 @@ const nav = (active) => `<header class="top"><div class="wrap">
 <a class="brand" href="./" aria-label="Shiftim ana sayfa">${logo()}<span>Shiftim</span></a>
 <nav class="links" aria-label="Ana menü">
 <a class="hide-sm" href="./#ozellikler">Özellikler</a><a class="hide-sm" href="./#sss">SSS</a>
-${docs.map((d) => `<a href="${d.slug}.html"${active === d.slug ? ' aria-current="page"' : ''}>${d.short}</a>`).join('')}
+${docs.map((d) => `<a class="hide-sm" href="${d.slug}.html"${active === d.slug ? ' aria-current="page"' : ''}>${d.short}</a>`).join('')}
+<a class="pill" href="app/">Panele giriş</a>
 </nav></div></header>`;
 
 const footer = `<footer class="bottom"><div class="wrap">
 <div class="fgrid">
 <div class="fbrand"><a class="brand" href="./">${logo()}<span>Shiftim</span></a><p>Kafe, restoran, klinik ve mağazalar için yapay zekâ destekli vardiya planlama.</p></div>
-<div><h4>Ürün</h4><ul><li><a href="./#ozellikler">Özellikler</a></li><li><a href="./#nasil">Nasıl çalışır?</a></li><li><a href="./#sss">Sık sorulan sorular</a></li></ul></div>
+<div><h4>Ürün</h4><ul><li><a href="app/">Yönetim paneli (web)</a></li><li><a href="./#ozellikler">Özellikler</a></li><li><a href="./#nasil">Nasıl çalışır?</a></li><li><a href="./#sss">Sık sorulan sorular</a></li></ul></div>
 <div><h4>Yasal</h4><ul>${docs.map((d) => `<li><a href="${d.slug}.html">${esc(d.doc.title)}</a></li>`).join('')}</ul></div>
 </div>
 <div class="fbase"><span>© ${YEAR} Shiftim · ${esc(controller)}</span><span>${mail}</span></div>
