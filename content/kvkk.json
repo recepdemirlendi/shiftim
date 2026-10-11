@@ -20,7 +20,8 @@
         "Finans: yöneticinin girdiği saatlik ücret (yalnızca ilgili kişi ve yönetici görebilir).",
         "Müşteri işlem / iletişim içerikleri: mesajlar, duyurular, devir notları, kontrol listesi işaretlemeleri.",
         "İşlem güvenliği: oturum bilgileri, cihaz bildirim anahtarı.",
-        "Konum: yalnızca konumla giriş açıksa, giriş anında işyerine uzaklığın hesaplanması için; saklanmaz."
+        "Konum: yalnızca konumla giriş açıksa, giriş anında işyerine uzaklığın hesaplanması için; saklanmaz.",
+        "İş arama verileri: iş profili (fotoğraf, tanıtım, beceriler, deneyim, şehir, telefon), iş başvuruları ve günlük işlerden sonra verilen değerlendirmeler."
       ]
     },
     {
@@ -32,7 +33,8 @@
         "Giriş-çıkış (mesai) kayıtlarının tutulması ve raporlanması,",
         "Ekip içi iletişimin ve bildirimlerin sağlanması,",
         "Bilgi güvenliği süreçlerinin yürütülmesi ve kötüye kullanımın önlenmesi,",
-        "Yetkili kurum ve kuruluşlara mevzuattan kaynaklanan bilgi verilmesi."
+        "Yetkili kurum ve kuruluşlara mevzuattan kaynaklanan bilgi verilmesi.",
+        "İş ilanlarında iş arayanlarla işletmeleri eşleştirmek ve güven puanı oluşturmak."
       ]
     },
     {
@@ -43,7 +45,8 @@
         "Expo / 650 Industries (ABD), Apple ve Google — anlık bildirimlerin iletilmesi.",
         "Google ve Apple — bu hizmetlerle giriş yapılmasını seçtiğinde kimlik doğrulama.",
         "Yurt dışına aktarım, KVKK m.9'da öngörülen usul ve hizmetin sunulması için zorunlu olduğu ölçüde yapılır.",
-        "Kanunen yetkili kamu kurum ve kuruluşları — hukuki yükümlülükler kapsamında."
+        "Kanunen yetkili kamu kurum ve kuruluşları — hukuki yükümlülükler kapsamında.",
+        "İş başvurusu yaptığında profilin ve başvurun yalnızca başvurduğun işletmeye aktarılır; telefon numaran yalnızca seni kabul eden işletmeye gösterilir."
       ]
     },
     {
