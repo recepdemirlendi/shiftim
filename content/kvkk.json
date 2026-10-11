@@ -1,0 +1,78 @@
+{
+  "title": "KVKK Aydınlatma Metni",
+  "updated": "11 Ekim 2026",
+  "intro": "6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesi ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca, Shiftim uygulamasını kullanan kişileri kişisel verilerinin işlenmesi hakkında bilgilendirmek amacıyla hazırlanmıştır.",
+  "sections": [
+    {
+      "heading": "1. Veri sorumlusunun kimliği",
+      "paragraphs": [
+        "Veri sorumlusu: {controller}",
+        "İletişim: {contact}",
+        "Shiftim'i kendi ekibi için kullanan işletme (işveren), çalışanlarına ait vardiya, izin ve mesai verileri bakımından ayrıca veri sorumlusudur. Bu verilere ilişkin taleplerini doğrudan işverenine de iletebilirsin."
+      ]
+    },
+    {
+      "heading": "2. İşlenen kişisel veri kategorileri",
+      "bullets": [
+        "Kimlik: ad soyad.",
+        "İletişim: e-posta adresi.",
+        "Mesleki deneyim / çalışma: şube üyelikleri, rol ve rol etiketleri, vardiya programı, izin ve müsaitlik talepleri, vardiya takasları, giriş-çıkış saatleri.",
+        "Finans: yöneticinin girdiği saatlik ücret (yalnızca ilgili kişi ve yönetici görebilir).",
+        "Müşteri işlem / iletişim içerikleri: mesajlar, duyurular, devir notları, kontrol listesi işaretlemeleri.",
+        "İşlem güvenliği: oturum bilgileri, cihaz bildirim anahtarı.",
+        "Konum: yalnızca konumla giriş açıksa, giriş anında işyerine uzaklığın hesaplanması için; saklanmaz."
+      ]
+    },
+    {
+      "heading": "3. Kişisel verilerin işlenme amaçları",
+      "bullets": [
+        "Üyelik ve hesap işlemlerinin yürütülmesi,",
+        "Vardiya programlarının hazırlanması ve paylaşılması (yapay zekâ desteğiyle hazırlama dahil),",
+        "İzin, müsaitlik, takas ve açık vardiya süreçlerinin yürütülmesi,",
+        "Giriş-çıkış (mesai) kayıtlarının tutulması ve raporlanması,",
+        "Ekip içi iletişimin ve bildirimlerin sağlanması,",
+        "Bilgi güvenliği süreçlerinin yürütülmesi ve kötüye kullanımın önlenmesi,",
+        "Yetkili kurum ve kuruluşlara mevzuattan kaynaklanan bilgi verilmesi."
+      ]
+    },
+    {
+      "heading": "4. Kişisel verilerin aktarıldığı kişiler ve aktarım amacı",
+      "bullets": [
+        "Supabase Inc. — barındırma ve veritabanı hizmeti (veriler AB'de, Frankfurt'ta saklanır).",
+        "Anthropic PBC (ABD) — yönetici yapay zekâ ile program hazırlattığında; yalnızca programın hazırlanması için gereken ekip, vardiya ve izin bilgileri.",
+        "Expo / 650 Industries (ABD), Apple ve Google — anlık bildirimlerin iletilmesi.",
+        "Google ve Apple — bu hizmetlerle giriş yapılmasını seçtiğinde kimlik doğrulama.",
+        "Yurt dışına aktarım, KVKK m.9'da öngörülen usul ve hizmetin sunulması için zorunlu olduğu ölçüde yapılır.",
+        "Kanunen yetkili kamu kurum ve kuruluşları — hukuki yükümlülükler kapsamında."
+      ]
+    },
+    {
+      "heading": "5. Toplama yöntemi ve hukuki sebep",
+      "paragraphs": [
+        "Kişisel verilerin; uygulamaya kayıt olurken, Google veya Apple ile giriş yaparken ve uygulamayı kullanırken (talep oluşturma, mesaj gönderme, giriş-çıkış yapma vb.) elektronik ortamda, otomatik ve kısmen otomatik yollarla toplanır.",
+        "Hukuki sebepler: KVKK m.5/2-c (bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması), m.5/2-ç (veri sorumlusunun hukuki yükümlülüğünü yerine getirmesi), m.5/2-e (bir hakkın tesisi, kullanılması veya korunması) ve m.5/2-f (ilgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla veri sorumlusunun meşru menfaati). Konum ve kamera, cihazında verdiğin izinle ve yalnızca işlemi başlattığında kullanılır."
+      ]
+    },
+    {
+      "heading": "6. KVKK m.11 kapsamındaki hakların",
+      "bullets": [
+        "Kişisel verilerinin işlenip işlenmediğini öğrenme,",
+        "İşlenmişse buna ilişkin bilgi talep etme,",
+        "İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,",
+        "Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,",
+        "Eksik veya yanlış işlenmişse düzeltilmesini isteme,",
+        "KVKK m.7 çerçevesinde silinmesini veya yok edilmesini isteme,",
+        "Düzeltme ve silme işlemlerinin aktarıldığı üçüncü kişilere bildirilmesini isteme,",
+        "Münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç ortaya çıkmasına itiraz etme,",
+        "Kanuna aykırı işlenmesi sebebiyle zarara uğraman hâlinde zararın giderilmesini talep etme."
+      ]
+    },
+    {
+      "heading": "7. Başvuru yolu",
+      "paragraphs": [
+        "Taleplerini, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'e uygun olarak, kimliğini doğrulayacak bilgilerle birlikte {contact} adresine e-posta ile iletebilirsin. Başvurun en geç 30 gün içinde ücretsiz olarak sonuçlandırılır.",
+        "Hesabını ve verilerini dilediğin zaman uygulamada Ekip → Hesabımı sil adımıyla kendin de silebilirsin."
+      ]
+    }
+  ]
+}

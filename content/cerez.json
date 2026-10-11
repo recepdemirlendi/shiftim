@@ -1,0 +1,52 @@
+{
+  "title": "Çerez Politikası",
+  "updated": "11 Ekim 2026",
+  "intro": "Bu politika, Shiftim web sitesinin ve mobil uygulamasının çerezleri ve benzeri cihaz depolama teknolojilerini nasıl kullandığını açıklar. Kısaca: reklam, analiz veya takip amaçlı çerez kullanmıyoruz.",
+  "sections": [
+    {
+      "heading": "1. Çerez nedir?",
+      "paragraphs": [
+        "Çerezler, bir web sitesini ziyaret ettiğinde tarayıcına kaydedilen küçük metin dosyalarıdır. Mobil uygulamalarda aynı amaçla cihazın yerel depolama alanı kullanılır."
+      ]
+    },
+    {
+      "heading": "2. Web sitesi",
+      "paragraphs": [
+        "Bu web sitesi hiçbir çerez yerleştirmez; analiz (ör. Google Analytics), reklam veya sosyal medya takip kodu içermez ve dış kaynaklardan yazı tipi ya da betik yüklemez.",
+        "Site GitHub Pages üzerinde barındırılır. GitHub, hizmetin güvenliği ve işletilmesi için ziyaretçilerin IP adresi gibi teknik kayıtları kendi gizlilik bildirimi kapsamında tutabilir."
+      ]
+    },
+    {
+      "heading": "3. Mobil uygulama",
+      "paragraphs": [
+        "Uygulama, yalnızca çalışabilmesi için zorunlu olan bilgileri cihazının yerel depolama alanında tutar. Bunlar üçüncü kişilerle paylaşılmaz ve seni başka uygulamalarda takip etmek için kullanılmaz:"
+      ],
+      "bullets": [
+        "Oturum bilgisi: her açılışta yeniden giriş yapmaman için (çıkış yapınca silinir).",
+        "Seçili şube: birden fazla şubedeysen en son açtığın şubeyi hatırlamak için.",
+        "Hatırlatıcı tercihleri: vardiya hatırlatıcısının açık olup olmadığı ve kaç dakika önce geleceği.",
+        "Apple ile girişte adın: Apple adını yalnızca ilk girişte paylaştığı için, giriş tamamlanana kadar geçici olarak; ardından silinir."
+      ]
+    },
+    {
+      "heading": "4. Hukuki sebep",
+      "paragraphs": [
+        "Kullanılan tüm depolama, hizmetin sunulması için zorunlu niteliktedir (KVKK m.5/2-c ve m.5/2-f). Bu nedenle ayrıca açık rıza istenmez. Zorunlu olmayan çerez kullanmaya başlarsak önce iznini isteriz ve bu politikayı güncelleriz."
+      ]
+    },
+    {
+      "heading": "5. Kontrol sende",
+      "bullets": [
+        "Uygulamadan çıkış yaptığında oturum bilgisi silinir; uygulamayı kaldırdığında cihazdaki tüm Shiftim verileri silinir.",
+        "Bildirim izni verirsen cihazının bildirim anahtarı sunucumuzda saklanır; bildirimleri telefonunun ayarlarından istediğin zaman kapatabilirsin.",
+        "Tarayıcını çerezleri engelleyecek şekilde ayarlayabilirsin; bu site çerez kullanmadığı için deneyimin etkilenmez."
+      ]
+    },
+    {
+      "heading": "6. İletişim",
+      "paragraphs": [
+        "Sorularını {contact} adresine iletebilirsin. Veri sorumlusu: {controller}."
+      ]
+    }
+  ]
+}
