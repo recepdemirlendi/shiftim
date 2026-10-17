@@ -21,7 +21,9 @@ const fill = (t) => esc(t.replaceAll('{controller}', controller)).replaceAll('{c
 const anchor = (h) => h.toLocaleLowerCase('tr').replace(/^\d+\.\s*/, '').normalize('NFD').replace(/[̀-ͯ]/g, '')
   .replace(/ı/g, 'i').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
-const logo = (cls = 'logo-mark') => `<svg class="${cls}" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366F1"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lg)"/><rect x="10" y="12" width="20" height="17" rx="3.5" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M10 17.5h20M15.5 9.5v5M24.5 9.5v5" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><path d="m16 23 2.6 2.4L24 20.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+// Logo: uygulama simgesiyle aynı turkuaz daire (logo.png); favicon için sade SVG (daire + takvim)
+const logo = (cls = 'logo-mark') => `<img class="${cls}" src="logo.png" alt="" width="34" height="34">`;
+const markSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#219EBC"/><rect x="9.5" y="11" width="21" height="19" rx="3.5" fill="none" stroke="#023047" stroke-width="2.4"/><path d="M9.5 16.5h21M15 8.5v5M25 8.5v5" stroke="#023047" stroke-width="2.4" stroke-linecap="round"/><path d="m15.5 23 3 2.7 6-5.7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 const icon = {
   ai: '<path d="M12 3l1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="M19 14l.9 2.1L22 17l-2.1.9L19 20l-.9-2.1L16 17l2.1-.9z"/>',
@@ -45,8 +47,8 @@ const icon = {
 const svg = (name, cls = 'ico') => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icon[name]}</svg>`;
 
 const css = `
-:root{--brand:#4F46E5;--brand-2:#A855F7;--brand-soft:#EEF0FF;--bg:#F7F7FC;--surface:#FFFFFF;--surface-2:#F2F3FA;--text:#0B1022;--text-2:#334155;--muted:#64748B;--border:#E5E7F1;--danger:#E11D48;--success:#059669;--glow-1:rgba(99,102,241,.22);--glow-2:rgba(168,85,247,.18);--shadow:0 1px 2px rgba(15,23,42,.04),0 10px 30px -12px rgba(15,23,42,.12);--radius:22px;color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brand:#8B87FF;--brand-2:#C084FC;--brand-soft:#22224A;--bg:#090B12;--surface:#121622;--surface-2:#1A1F2E;--text:#F3F5FA;--text-2:#CBD5E1;--muted:#8B95AA;--border:#252B3C;--danger:#FB7185;--success:#34D399;--glow-1:rgba(99,102,241,.28);--glow-2:rgba(168,85,247,.22);--shadow:0 10px 30px -12px rgba(0,0,0,.6);color-scheme:dark}}
+:root{--brand:#157A93;--brand-2:#219EBC;--brand-soft:#DCEFF5;--bg:#F4F9FB;--surface:#FFFFFF;--surface-2:#EAF4F7;--text:#0B2433;--text-2:#334155;--muted:#64748B;--border:#D3E6EC;--danger:#E11D48;--success:#059669;--glow-1:rgba(33,158,188,.22);--glow-2:rgba(2,48,71,.18);--shadow:0 1px 2px rgba(15,23,42,.04),0 10px 30px -12px rgba(15,23,42,.12);--radius:22px;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--brand:#5CC8E0;--brand-2:#219EBC;--brand-soft:#173A4C;--bg:#0B1A22;--surface:#12262F;--surface-2:#18313C;--text:#F3F5FA;--text-2:#CBD5E1;--muted:#8B95AA;--border:#24414D;--danger:#FB7185;--success:#34D399;--glow-1:rgba(33,158,188,.28);--glow-2:rgba(2,48,71,.22);--shadow:0 10px 30px -12px rgba(0,0,0,.6);color-scheme:dark}}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:90px}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
 a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}
@@ -57,7 +59,7 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline;text
 header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:saturate(1.8) blur(16px);-webkit-backdrop-filter:saturate(1.8) blur(16px);border-bottom:1px solid color-mix(in srgb,var(--border) 70%,transparent)}
 header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
 .brand{display:flex;align-items:center;gap:10px;color:var(--text);font-weight:800;font-size:20px;letter-spacing:-.4px}.brand:hover{text-decoration:none}
-.logo-mark{width:34px;height:34px;flex:none;filter:drop-shadow(0 6px 12px rgba(99,102,241,.35))}
+.logo-mark{width:34px;height:34px;flex:none;filter:drop-shadow(0 6px 12px rgba(33,158,188,.35))}
 nav.links{display:flex;gap:2px;align-items:center}
 nav.links a{color:var(--muted);font-weight:600;font-size:14px;padding:8px 11px;border-radius:10px}nav.links a:hover,nav.links a[aria-current]{color:var(--text);background:var(--surface-2);text-decoration:none}
 nav.links a.pill{background:var(--text);color:var(--bg);margin-left:6px}nav.links a.pill:hover{opacity:.9;background:var(--text);color:var(--bg)}
@@ -68,7 +70,7 @@ nav.links a.pill{background:var(--text);color:var(--bg);margin-left:6px}nav.link
 .grad{background:linear-gradient(95deg,var(--brand) 10%,var(--brand-2) 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:12px 18px;border-radius:14px;border:1px solid transparent;line-height:1.15;transition:transform .15s ease,box-shadow .15s ease}
 .btn:hover{text-decoration:none;transform:translateY(-1px)}
-.btn.dark{background:var(--text);color:var(--bg);box-shadow:0 10px 24px -10px rgba(11,16,34,.5)}.btn.ghost{background:var(--surface);color:var(--text);border-color:var(--border)}
+.btn.dark{background:var(--text);color:var(--bg);box-shadow:0 10px 24px -10px rgba(2,48,71,.5)}.btn.ghost{background:var(--surface);color:var(--text);border-color:var(--border)}
 .btn small{display:block;font-weight:600;font-size:11px;opacity:.7;letter-spacing:.2px}
 .btn svg.store{width:22px;height:22px}
 section.block{padding:56px 0}@media(min-width:900px){section.block{padding:80px 0}}
@@ -87,7 +89,7 @@ section.block{padding:56px 0}@media(min-width:900px){section.block{padding:80px 
 .hero-note .ico{width:18px;height:18px;color:var(--success)}
 /* Telefon */
 .phone-wrap{justify-self:center;position:relative;width:min(330px,100%)}
-.phone{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:44px;padding:12px;box-shadow:0 40px 80px -30px rgba(79,70,229,.45),0 0 0 8px #0B1022,0 0 0 9px #2A3045;animation:float 7s ease-in-out infinite}
+.phone{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:44px;padding:12px;box-shadow:0 40px 80px -30px rgba(21,122,147,.45),0 0 0 8px #0B2433,0 0 0 9px #2A3045;animation:float 7s ease-in-out infinite}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @media (prefers-reduced-motion:reduce){.phone{animation:none}}
 .screen{background:var(--bg);border-radius:34px;overflow:hidden;padding:10px 12px 0}
@@ -96,8 +98,8 @@ section.block{padding:56px 0}@media(min-width:900px){section.block{padding:80px 
 .status .bars{display:flex;gap:2px;align-items:flex-end}.status .bars i{display:block;width:3px;background:var(--text);border-radius:1px}
 .p-greet{font-size:12px;color:var(--muted);font-weight:600;margin:4px 6px 0}.p-title{font-size:23px;font-weight:850;margin:0 6px 12px;letter-spacing:-.5px}
 .p-card{border-radius:18px;padding:13px 14px;margin-bottom:10px;background:var(--surface);border:1px solid var(--border)}
-.p-shift{background:linear-gradient(135deg,#4F46E5,#9333EA);color:#fff;border:0}.p-shift .t{font-size:10.5px;font-weight:700;opacity:.85;text-transform:uppercase;letter-spacing:.6px}.p-shift .h{font-size:28px;font-weight:850;letter-spacing:-.6px;margin:4px 0 0}.p-shift .s{font-size:13.5px;opacity:.92}
-.p-shift .who{display:flex;margin-top:10px}.p-shift .who i{width:24px;height:24px;border-radius:50%;border:2px solid #7C3AED;margin-right:-7px;display:grid;place-items:center;font-size:10px;font-style:normal;font-weight:800}
+.p-shift{background:linear-gradient(135deg,#157A93,#023047);color:#fff;border:0}.p-shift .t{font-size:10.5px;font-weight:700;opacity:.85;text-transform:uppercase;letter-spacing:.6px}.p-shift .h{font-size:28px;font-weight:850;letter-spacing:-.6px;margin:4px 0 0}.p-shift .s{font-size:13.5px;opacity:.92}
+.p-shift .who{display:flex;margin-top:10px}.p-shift .who i{width:24px;height:24px;border-radius:50%;border:2px solid #157A93;margin-right:-7px;display:grid;place-items:center;font-size:10px;font-style:normal;font-weight:800}
 .p-open{position:relative;padding-left:18px}.p-open:before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:4px;border-radius:0 4px 4px 0;background:var(--danger)}
 .p-open b{display:block;font-size:14px}.p-open>span{font-size:12px;color:var(--muted)}
 .p-row{display:flex;gap:8px;margin-top:9px}.p-btn{background:#059669;color:#fff;font-size:12px;font-weight:700;padding:6px 11px;border-radius:9px}.p-tag{font-size:11px;font-weight:700;color:var(--danger);background:color-mix(in srgb,var(--danger) 12%,transparent);padding:5px 9px;border-radius:999px;margin-left:auto}
@@ -192,9 +194,9 @@ const page = ({ title, description, active, body, script = '' }) => `<!doctype h
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
-<meta name="theme-color" content="#4F46E5">
+<meta name="theme-color" content="#157A93">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="website"><meta property="og:locale" content="tr_TR">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.png" sizes="48x48" type="image/png"><link rel="apple-touch-icon" href="logo.png">
 <link rel="stylesheet" href="style.css">
 </head><body>
 ${nav(active)}
@@ -257,10 +259,10 @@ ${sections}
 
 // ---------- Tanıtım sayfası ----------
 const features = [
-  ['ai', '#6366F1', '#A855F7', 'Programı yapay zekâ hazırlasın', '“Ali pazartesi izinli, hafta sonları dönüşümlü olsun” yaz; program saniyeler içinde hazır. Sen kontrol edip yayınla.'],
+  ['ai', '#219EBC', '#219EBC', 'Programı yapay zekâ hazırlasın', '“Ali pazartesi izinli, hafta sonları dönüşümlü olsun” yaz; program saniyeler içinde hazır. Sen kontrol edip yayınla.'],
   ['sos', '#F43F5E', '#FB923C', 'Gelemeyen çalışana anında çözüm', '“Bugün gelemiyorum” diyen çalışanın vardiyası ekibe duyurulur; ilk “Ben gelirim” diyen alır.'],
   ['chat', '#10B981', '#14B8A6', 'WhatsApp grubuna gerek yok', 'Ekip sohbeti ve birebir mesajlar uygulamanın içinde; program, izin ve konuşma tek yerde.'],
-  ['qr', '#0EA5E9', '#6366F1', 'QR ve konumla giriş-çıkış', 'Çalışan işyerindeki QR kodu okutarak giriş yapar; mesai raporu kendiliğinden oluşur.'],
+  ['qr', '#0EA5E9', '#219EBC', 'QR ve konumla giriş-çıkış', 'Çalışan işyerindeki QR kodu okutarak giriş yapar; mesai raporu kendiliğinden oluşur.'],
   ['sun', '#F59E0B', '#F97316', 'Yöneticiye sabah özeti', 'Her sabah tek bildirim: bugün kim var, hangi vardiya eksik, kaç talep onay bekliyor.'],
   ['list', '#8B5CF6', '#EC4899', 'Devir notu ve kontrol listesi', 'Açılış/kapanış listeleri ve vardiyalar arası devir notları. Kafe de klinik de aynı kolaylıkla.'],
 ];
@@ -350,6 +352,6 @@ writeFileSync(new URL('./index.html', import.meta.url), page({
 }));
 
 writeFileSync(new URL('./style.css', import.meta.url), css.trim() + '\n');
-writeFileSync(new URL('./favicon.svg', import.meta.url), logo('x').replace('class="x" ', 'xmlns="http://www.w3.org/2000/svg" ').replace(' aria-hidden="true"', '') + '\n');
+writeFileSync(new URL('./favicon.svg', import.meta.url), markSvg + '\n');
 writeFileSync(new URL('./.nojekyll', import.meta.url), '');
 console.log('index.html, gizlilik.html, kvkk.html, cerez.html, style.css, favicon.svg yazıldı');
