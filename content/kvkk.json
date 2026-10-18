@@ -1,6 +1,6 @@
 {
   "title": "KVKK Aydınlatma Metni",
-  "updated": "11 Ekim 2026",
+  "updated": "18 Ekim 2026",
   "intro": "6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesi ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca, Shiftim uygulamasını kullanan kişileri kişisel verilerinin işlenmesi hakkında bilgilendirmek amacıyla hazırlanmıştır.",
   "sections": [
     {
@@ -21,7 +21,10 @@
         "Müşteri işlem / iletişim içerikleri: mesajlar, duyurular, devir notları, kontrol listesi işaretlemeleri.",
         "İşlem güvenliği: oturum bilgileri, cihaz bildirim anahtarı.",
         "Konum: yalnızca konumla giriş açıksa, giriş anında işyerine uzaklığın hesaplanması için; saklanmaz.",
-        "İş arama verileri: iş profili (fotoğraf, tanıtım, beceriler, deneyim, şehir, telefon), iş başvuruları ve günlük işlerden sonra verilen değerlendirmeler."
+        "Görsel kayıt: iş profili fotoğrafı, yüklenen belgelerin ve vardiya tablolarının görüntüleri.",
+        "İş arama verileri: iş profili (fotoğraf, tanıtım, beceriler, deneyim, şehir, telefon), iş başvuruları ve günlük işlerden sonra verilen değerlendirmeler.",
+        "Özel nitelikli kişisel veri (sağlık): yüklenmesi hâlinde sağlık raporu.",
+        "Şikâyet ve engel kayıtları: şikâyet edilen içerik, sebep, tarih ve engellenen kişiler."
       ]
     },
     {
@@ -34,17 +37,20 @@
         "Ekip içi iletişimin ve bildirimlerin sağlanması,",
         "Bilgi güvenliği süreçlerinin yürütülmesi ve kötüye kullanımın önlenmesi,",
         "Yetkili kurum ve kuruluşlara mevzuattan kaynaklanan bilgi verilmesi.",
-        "İş ilanlarında iş arayanlarla işletmeleri eşleştirmek ve güven puanı oluşturmak."
+        "İş ilanlarında iş arayanlarla işletmeleri eşleştirmek ve güven puanı oluşturmak.",
+        "Uygunsuz içerik şikâyetlerinin incelenmesi ve kullanım koşullarının uygulanması.",
+        "Belgelerin geçerlilik tarihlerinin takibi ve hatırlatılması."
       ]
     },
     {
       "heading": "4. Kişisel verilerin aktarıldığı kişiler ve aktarım amacı",
       "bullets": [
         "Supabase Inc. — barındırma ve veritabanı hizmeti (veriler AB'de, Frankfurt'ta saklanır).",
-        "Anthropic PBC (ABD) — yönetici yapay zekâ ile program hazırlattığında; yalnızca programın hazırlanması için gereken ekip, vardiya ve izin bilgileri.",
-        "Expo / 650 Industries (ABD), Apple ve Google — anlık bildirimlerin iletilmesi.",
+        "Anthropic PBC (ABD) — yalnızca yapay zekâ özellikleri kullanıldığında ve açık rızan alındıktan sonra: program hazırlama için gereken ekip, vardiya, izin bilgileri ve talimat; tablo okumada tablonun görüntüsü.",
+        "Expo / 650 Industries (ABD), Apple ve Google (Firebase Cloud Messaging) — anlık bildirimlerin iletilmesi.",
+        "Brevo (Sendinblue SAS, Fransa) — e-posta doğrulama kodlarının gönderilmesi.",
         "Google ve Apple — bu hizmetlerle giriş yapılmasını seçtiğinde kimlik doğrulama.",
-        "Yurt dışına aktarım, KVKK m.9'da öngörülen usul ve hizmetin sunulması için zorunlu olduğu ölçüde yapılır.",
+        "Yurt dışına aktarım, hizmetin sunulması için gerekli olduğu ölçüde ve KVKK m.9'da öngörülen güvencelerle (hizmet sağlayıcılarla yapılan sözleşmeler; yapay zekâ özelliklerinde açık rıza) yapılır.",
         "Kanunen yetkili kamu kurum ve kuruluşları — hukuki yükümlülükler kapsamında.",
         "İş başvurusu yaptığında profilin ve başvurun yalnızca başvurduğun işletmeye aktarılır; telefon numaran yalnızca seni kabul eden işletmeye gösterilir."
       ]
@@ -53,7 +59,7 @@
       "heading": "5. Toplama yöntemi ve hukuki sebep",
       "paragraphs": [
         "Kişisel verilerin; uygulamaya kayıt olurken, Google veya Apple ile giriş yaparken ve uygulamayı kullanırken (talep oluşturma, mesaj gönderme, giriş-çıkış yapma vb.) elektronik ortamda, otomatik ve kısmen otomatik yollarla toplanır.",
-        "Hukuki sebepler: KVKK m.5/2-c (bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması), m.5/2-ç (veri sorumlusunun hukuki yükümlülüğünü yerine getirmesi), m.5/2-e (bir hakkın tesisi, kullanılması veya korunması) ve m.5/2-f (ilgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla veri sorumlusunun meşru menfaati). Konum ve kamera, cihazında verdiğin izinle ve yalnızca işlemi başlattığında kullanılır."
+        "Hukuki sebepler: KVKK m.5/2-c (bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması), m.5/2-ç (veri sorumlusunun hukuki yükümlülüğünü yerine getirmesi), m.5/2-e (bir hakkın tesisi, kullanılması veya korunması) ve m.5/2-f (ilgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla veri sorumlusunun meşru menfaati). Konum ve kamera, cihazında verdiğin izinle ve yalnızca işlemi başlattığında kullanılır; yapay zekâ özellikleri için m.5/1 ve m.9 kapsamında açık rıza; sağlık raporu için KVKK m.6'daki şartlar (iş sağlığı ve güvenliği ile mevzuattan doğan yükümlülükler)."
       ]
     },
     {

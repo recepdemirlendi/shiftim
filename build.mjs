@@ -1,5 +1,5 @@
 // Shiftim web sitesi üreticisi: tanıtım sayfası + Gizlilik, KVKK ve Çerez politikaları.
-// Gizlilik metni uygulamadaki ../mobile/src/lib/privacy.json'dan gelir (uygulama ile site aynı metni gösterir).
+// Gizlilik ve kullanım koşulları metinleri uygulamadaki ../mobile/src/lib/privacy.json ve terms.json'dan gelir (uygulama ile site aynı metni gösterir).
 // KVKK ve çerez metinleri content/ altında. Metin değişince: node build.mjs → oluşan HTML'leri commit et.
 // Dış kaynak (font, betik, analiz) yüklenmez; Çerez Politikası'nda bunu taahhüt ediyoruz.
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -10,6 +10,7 @@ const docs = [
   { slug: 'gizlilik', short: 'Gizlilik', doc: privacy, desc: 'Hangi verilerin neden işlendiği, kimlerle paylaşıldığı ve hakların.' },
   { slug: 'kvkk', short: 'KVKK', doc: read('./content/kvkk.json'), desc: '6698 sayılı Kanun kapsamında aydınlatma metni ve başvuru yolu.' },
   { slug: 'cerez', short: 'Çerezler', doc: read('./content/cerez.json'), desc: 'Reklam ve takip çerezi kullanmıyoruz; cihazda tutulanların listesi.' },
+  { slug: 'kosullar', short: 'Koşullar', doc: read('../mobile/src/lib/terms.json'), desc: 'Uygulamanın kullanım kuralları, şikâyet ve engelleme.' },
 ];
 const { controller, contact } = privacy;
 const YEAR = 2026;
