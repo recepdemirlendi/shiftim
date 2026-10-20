@@ -11,6 +11,7 @@ const docs = [
   { slug: 'kvkk', short: 'KVKK', doc: read('./content/kvkk.json'), desc: '6698 sayılı Kanun kapsamında aydınlatma metni ve başvuru yolu.' },
   { slug: 'cerez', short: 'Çerezler', doc: read('./content/cerez.json'), desc: 'Reklam ve takip çerezi kullanmıyoruz; cihazda tutulanların listesi.' },
   { slug: 'kosullar', short: 'Koşullar', doc: read('../mobile/src/lib/terms.json'), desc: 'Uygulamanın kullanım kuralları, şikâyet ve engelleme.' },
+  { slug: 'hesap-silme', short: 'Hesap silme', doc: read('./content/hesap-silme.json'), desc: 'Hesabını ve verilerini nasıl silersin, neler silinir.' },
 ];
 const { controller, contact } = privacy;
 const YEAR = 2026;

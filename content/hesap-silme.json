@@ -1,0 +1,53 @@
+{
+  "title": "Hesap Silme",
+  "updated": "21 Ekim 2026",
+  "intro": "Shiftim (geliştirici: {controller}) hesabını ve sana ait verileri nasıl sileceğin bu sayfada anlatılır. Silme işlemi kalıcıdır ve geri alınamaz.",
+  "sections": [
+    {
+      "heading": "1. Uygulamadan silme",
+      "paragraphs": [
+        "En hızlı yol uygulamanın içinden silmektir; işlem hemen tamamlanır."
+      ],
+      "bullets": [
+        "Shiftim uygulamasını aç ve hesabınla giriş yap.",
+        "Alt menüden Ekip sekmesine gir.",
+        "Sayfanın en altındaki \"Hesabımı sil\" seçeneğine dokun.",
+        "Başka çalışanların da bulunduğu bir işletmenin tek sahibiysen, silmeden önce Ekip ekranından başka birini sahip yapman istenir; böylece ekibin verileri sahipsiz kalmaz.",
+        "Açılan pencerede \"Kalıcı olarak sil\"e dokun. \"Hesabın silindi\" mesajı görünür ve giriş ekranına dönülür."
+      ]
+    },
+    {
+      "heading": "2. Uygulamaya erişemiyorsan",
+      "paragraphs": [
+        "Uygulamaya giriş yapamıyorsan, hesabına kayıtlı e-posta adresinden {contact} adresine \"Hesap silme talebi\" konulu bir e-posta gönder. Kimliğini doğruladıktan sonra hesabını en geç 30 gün içinde siler ve sana bilgi veririz."
+      ]
+    },
+    {
+      "heading": "3. Silinen veriler",
+      "paragraphs": [
+        "Hesabın silindiğinde şunlar kalıcı olarak silinir:"
+      ],
+      "bullets": [
+        "Hesap bilgilerin (ad soyad, e-posta, telefon, profil fotoğrafı)",
+        "Vardiyaların, izin, müsaitlik ve takas taleplerin",
+        "Gönderdiğin mesajlar, ajanda planların ve yüklediğin belgeler",
+        "Giriş-çıkış kayıtların, iş profilin ve iş başvuruların",
+        "Yaptığın şikâyetler ve engellediğin kişiler",
+        "Tek üyesi olduğun işletmeler ve onların tüm verileri"
+      ]
+    },
+    {
+      "heading": "4. Saklanabilecek veriler",
+      "paragraphs": [
+        "Birden fazla kişinin bulunduğu bir işletmedeysen işletmenin kendisi ve diğer çalışanların verileri silinmez; senin bu işletmedeki kişisel kayıtların silinir. İşverenin, çalışma ve ücret kayıtlarını mevzuat gereği kendi sistemlerinde saklama yükümlülüğü saklıdır.",
+        "Uygunsuz içerik şikâyetlerinde, incelemenin tamamlanabilmesi için şikâyet edilen metnin bir kopyası şikâyet kaydında kalabilir; bu kopya kimliğinle ilişkilendirilmez."
+      ]
+    },
+    {
+      "heading": "5. İletişim",
+      "paragraphs": [
+        "Sorular için: {contact}. Verilerinin nasıl işlendiğini Gizlilik Politikası'nda ve KVKK Aydınlatma Metni'nde bulabilirsin."
+      ]
+    }
+  ]
+}
