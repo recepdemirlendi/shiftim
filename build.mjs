@@ -140,7 +140,7 @@ section.block{padding:56px 0}@media(min-width:900px){section.block{padding:80px 
 .faq details p{margin:0 0 18px;color:var(--text-2)}
 /* Son çağrı */
 .final{text-align:center;padding:44px 22px;border-radius:30px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow)}
-.final h2{font-size:clamp(26px,4vw,38px);letter-spacing:-1px;margin:0 0 10px}.final p{color:var(--muted);margin:0 auto 24px;max-width:520px}
+.final h2{font-size:clamp(26px,4vw,38px);letter-spacing:-1px;margin:0 0 10px}.final p{color:var(--muted);margin:0 auto 24px;max-width:520px}.final .cta{justify-content:center}
 /* Belgeler */
 .progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:30;background:linear-gradient(90deg,var(--brand),var(--brand-2))}
 .doc-hero{position:relative;isolation:isolate;padding:48px 0 30px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,color-mix(in srgb,var(--brand-soft) 70%,transparent),transparent)}
@@ -284,6 +284,8 @@ const faq = [
 const apple = '<svg class="store" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.6zM14.1 5.6c.6-.8 1.1-1.8 1-2.9-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2-.5 2.7-1.3z"/></svg>';
 const play = '<svg class="store" viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M4 3.3 13.6 13 4 22.7c-.4-.2-.6-.6-.6-1.1V4.4c0-.5.2-.9.6-1.1z"/><path fill="#FBBC04" d="m17 9.6-3.4 3.4L17 16.4l3.9-2.2c1-.6 1-1.9 0-2.4z"/><path fill="#4285F4" d="M4 3.3c.3-.2.8-.2 1.2 0L17 9.6 13.6 13z"/><path fill="#EA4335" d="m13.6 13 3.4 3.4-11.8 6.3c-.4.2-.9.2-1.2 0z"/></svg>';
 
+const appStore = 'https://apps.apple.com/tr/app/shiftim/id6823755838';
+
 writeFileSync(new URL('./index.html', import.meta.url), page({
   title: 'Shiftim · Vardiya planlama, tek dokunuşla',
   description: 'Kafe, restoran, klinik ve mağazalar için yapay zekâ destekli vardiya planlama, açık vardiya, ekip sohbeti ve QR ile mesai takibi.',
@@ -291,11 +293,11 @@ writeFileSync(new URL('./index.html', import.meta.url), page({
   body: `<div class="hero-bg"><div class="wrap">
 <section class="hero">
 <div>
-<span class="eyebrow"><span class="dot"></span>Yakında App Store ve Google Play'de</span>
+<span class="eyebrow"><span class="dot"></span>App Store'da yayında · Google Play'de yakında</span>
 <h1>Vardiya planlama,<br><span class="grad">tek dokunuşla.</span></h1>
 <p class="lead">Programı yapay zekâ hazırlasın, gelemeyen çalışanın yerine ekip anında girsin, herkes WhatsApp'a dönmeden uygulamada konuşsun.</p>
 <div class="cta">
-<span class="btn dark">${apple}<span><small>Yakında</small>App Store</span></span>
+<a class="btn dark" href="${appStore}" target="_blank" rel="noopener">${apple}<span><small>İndir</small>App Store</span></a>
 <span class="btn ghost">${play}<span><small>Yakında</small>Google Play</span></span>
 </div>
 <div class="hero-note">${svg('shield')}Verilerin AB'de saklanır · reklam ve takip yok · KVKK uyumlu</div>
@@ -347,8 +349,9 @@ writeFileSync(new URL('./index.html', import.meta.url), page({
 </section>
 
 <section class="block" style="padding-top:0">
-<div class="final"><h2>Erken erişim listesine katıl</h2><p>Shiftim çok yakında mağazalarda. İşletmende ilk deneyenlerden olmak istersen yaz; kurulumda birebir yardımcı olalım.</p>
-<a class="btn dark" href="mailto:${esc(contact)}?subject=Shiftim%20erken%20eri%C5%9Fim">${svg('mail')} Bize yaz</a></div>
+<div class="final"><h2>Shiftim'i hemen dene</h2><p>iPhone için App Store'da yayında, Android sürümü çok yakında Google Play'de. İşletmende kurulum için yardım istersen yaz; birebir yardımcı olalım.</p>
+<div class="cta"><a class="btn dark" href="${appStore}" target="_blank" rel="noopener">${apple}<span><small>İndir</small>App Store</span></a>
+<a class="btn ghost" href="mailto:${esc(contact)}?subject=Shiftim%20kurulum">${svg('mail')} Bize yaz</a></div></div>
 </section>
 </div>`,
 }));

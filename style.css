@@ -89,7 +89,7 @@ section.block{padding:56px 0}@media(min-width:900px){section.block{padding:80px 
 .faq details p{margin:0 0 18px;color:var(--text-2)}
 /* Son çağrı */
 .final{text-align:center;padding:44px 22px;border-radius:30px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow)}
-.final h2{font-size:clamp(26px,4vw,38px);letter-spacing:-1px;margin:0 0 10px}.final p{color:var(--muted);margin:0 auto 24px;max-width:520px}
+.final h2{font-size:clamp(26px,4vw,38px);letter-spacing:-1px;margin:0 0 10px}.final p{color:var(--muted);margin:0 auto 24px;max-width:520px}.final .cta{justify-content:center}
 /* Belgeler */
 .progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:30;background:linear-gradient(90deg,var(--brand),var(--brand-2))}
 .doc-hero{position:relative;isolation:isolate;padding:48px 0 30px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,color-mix(in srgb,var(--brand-soft) 70%,transparent),transparent)}
